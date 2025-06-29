@@ -30,3 +30,7 @@ https://github.com/nhanand/two-tier-flask-app-docker-networking-P7/blob/master/i
 on browser 
 localhot:5000                   # access your application 
 
+on ec2
+
+ip_address:5000    # 
+
