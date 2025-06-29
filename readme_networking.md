@@ -23,6 +23,8 @@ https://github.com/nhanand/two-tier-flask-app-docker-networking-P7/blob/master/i
 
   docker network inspect two-tier-network  # you will find both container are running in same network
 
+https://github.com/nhanand/two-tier-flask-app-docker-networking-P7/blob/master/images/network.png
+
 on browser 
 localhot:5000                   # access your application 
 
