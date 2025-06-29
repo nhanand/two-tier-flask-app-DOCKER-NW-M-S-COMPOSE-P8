@@ -19,6 +19,8 @@ cmd:   docker run -d --name mysql --network two-tier-network -e MYSQL_ROOT_PASSW
 
 https://github.com/nhanand/two-tier-flask-app-docker-networking-P7/blob/master/images/app.png
 
+https://github.com/nhanand/two-tier-flask-app-docker-networking-P7/blob/master/images/data.png
+
 # inspect docker network 
 
   docker network inspect two-tier-network  # you will find both container are running in same network
