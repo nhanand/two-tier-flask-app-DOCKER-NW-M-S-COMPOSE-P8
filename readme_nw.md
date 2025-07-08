@@ -10,7 +10,8 @@ cmd: docker pull mysql
      docker build -t dockeruser534/two-tier-backend .
 
 # create a network
-                                                                                                                          docker network create two-tier-network -d bridge
+
+docker network create two-tier-network -d bridge
 
 # build docker container for both application in same network
 
