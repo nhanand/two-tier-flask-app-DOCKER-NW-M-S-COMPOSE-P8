@@ -15,8 +15,11 @@ docker network create two-tier-network -d bridge
 
 # build docker container for both application in same network
 
-cmd:   docker run -d --name mysql --network two-tier-network -e MYSQL_ROOT_PASSWORD=root -e MYSQL_DATABASE=devops mysql
-        docker run -d -p 5000:5000 --network two-tier-network -e MYSQL_HOST=mysql -e MYSQL_USER=root -e MYSQL_PASSWORD=root -e MYSQL_DB=devops two-tier-backend:latest
+cmd:   
+
+docker run -d --name mysql --network two-tier-network -e MYSQL_ROOT_PASSWORD=root -e MYSQL_DATABASE=devops mysql
+
+docker run -d -p 5000:5000 --network two-tier-network -e MYSQL_HOST=mysql -e MYSQL_USER=root -e MYSQL_PASSWORD=root -e MYSQL_DB=devops two-tier-backend:latest
 
 https://github.com/nhanand/two-tier-flask-app-docker-networking-P7/blob/master/images/app.png
 
